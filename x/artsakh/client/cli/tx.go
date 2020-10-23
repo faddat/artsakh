@@ -23,6 +23,9 @@ func GetTxCmd(cdc *codec.Codec) *cobra.Command {
 
 	artsakhTxCmd.AddCommand(flags.PostCommands(
     // this line is used by starport scaffolding # 1
+		GetCmdCreateAdd(cdc),
+		GetCmdSetAdd(cdc),
+		GetCmdDeleteAdd(cdc),
 	)...)
 
 	return artsakhTxCmd
