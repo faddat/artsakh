@@ -1,0 +1,9 @@
+syntax = "proto3";
+package artsakh.artsakh;
+
+option go_package = "github.com/faddat/artsakh/x/artsakh/types";
+
+// GenesisState defines the capability module's genesis state.
+message GenesisState {
+}
+
